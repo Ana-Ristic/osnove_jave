@@ -4,8 +4,8 @@ public class Zadatak_Proizvod {
 
 	public static void main(String[] args) {
 		Proizvod valcna = new Proizvod();
-		valcna.proizvod = "Krema za lice";
-		valcna.cena = "350";
+		valcna.proizvod = "Peppe Tools valcna";
+		valcna.cena = "54000";
 		valcna.tezina = 20000.00;
 		valcna.print();
 		System.out.println("Tezina valcne u tonama je " + valcna.konvertuj("t"));
