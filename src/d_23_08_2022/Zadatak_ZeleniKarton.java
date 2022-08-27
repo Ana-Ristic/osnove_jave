@@ -11,11 +11,8 @@ public class Zadatak_ZeleniKarton {
 
 		for (int i = 0; i < 10; i++) {
 			System.out.print("Ime studenta: ");
-			String imeStudenta = s.next();
-
-			System.out.print("Prezime studenta: ");
-			String prezimeStudenta = s.next();
-
+			String punoImeStudenta = s.nextLine();
+			
 			System.out.print("Broj indeksa: ");
 			String brojIndeksa = s.next();
 
@@ -23,25 +20,21 @@ public class Zadatak_ZeleniKarton {
 			String predmet = s.next();
 
 			System.out.print("Ime profesora: ");
-			String imeProfesora = s.next();
-
-			System.out.print("Prezime profesora: ");
-			String prezimeProfesora = s.next();
+			String punoImeProfesora = s.nextLine();
 
 			System.out.print("Ocena: ");
 			int ocena = s.nextInt();
 
-			ZeleniKarton zKarton = new ZeleniKarton(imeStudenta, prezimeStudenta, brojIndeksa, predmet, imeProfesora,
-					prezimeProfesora, ocena);
+			ZeleniKarton zKarton = new ZeleniKarton(punoImeStudenta, brojIndeksa, predmet, punoImeProfesora, ocena);
 			indeks.add(zKarton);
 		}
 
 		for (int i = 0; i <= indeks.size() - 1; i++) {
-			System.out.println("Student: " + indeks.get(i).getImeStudenta() + " " + indeks.get(i).getPrezimeStudenta()
+			System.out.println("Student: " + indeks.get(i).getPunoImeStudenta()
 					+ " - " + "Broj indeksa: " + indeks.get(i).getBrojIndeksa());
 			System.out.println("predmet: " + indeks.get(i).getPredmet() + " - " + "Ocena: " + indeks.get(i).getOcena());
 			System.out.println(
-					"Profesor: " + indeks.get(i).getImeProfesora() + " " + indeks.get(i).getPrezimeProfesora());
+					"Profesor: " + indeks.get(i).getPunoImeProfesora());
 
 		}
 

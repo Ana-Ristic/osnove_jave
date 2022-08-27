@@ -2,42 +2,29 @@ package d_23_08_2022;
 
 public class ZeleniKarton {
 
-	private String imeStudenta;
-	private String prezimeStudenta;
+	private String punoImeStudenta;
 	private String brojIndeksa;
 	private String predmet;
-	private String imeProfesora;
-	private String prezimeProfesora;
+	private String punoImeProfesora;
 	private int ocena;
 
-	public ZeleniKarton(String imeStudenta, String prezimeStudenta, String brojIndeksa, String predmet,
-			String imeProfesora, String prezimeProfesora, int ocena) {
+	public ZeleniKarton(String punoImeStudenta, String brojIndeksa, String predmet,
+			String punoImeProfesora, int ocena) {
 		super();
-		this.imeStudenta = imeStudenta;
-		this.prezimeStudenta = prezimeStudenta;
+		this.punoImeStudenta = punoImeStudenta;
 		this.brojIndeksa = brojIndeksa;
 		this.predmet = predmet;
-		this.imeProfesora = imeProfesora;
-		this.prezimeProfesora = prezimeProfesora;
+		this.punoImeProfesora = punoImeProfesora;
 		this.ocena = ocena;
 	}
 
-	public String getImeStudenta() {
-		return imeStudenta;
+	public String getPunoImeStudenta() {
+		return punoImeStudenta;
 	}
 
-	public void setImeStudenta(String imeStudenta) {
-		this.imeStudenta = imeStudenta;
+	public void setPunoImeStudenta(String punoImeStudenta) {
+		this.punoImeStudenta = punoImeStudenta;
 	}
-
-	public String getPrezimeStudenta() {
-		return prezimeStudenta;
-	}
-
-	public void setPrezimeStudenta(String prezimeStudenta) {
-		this.prezimeStudenta = prezimeStudenta;
-	}
-
 	public String getBrojIndeksa() {
 		return brojIndeksa;
 	}
@@ -54,22 +41,13 @@ public class ZeleniKarton {
 		this.predmet = predmet;
 	}
 
-	public String getImeProfesora() {
-		return imeProfesora;
+	public String getPunoImeProfesora() {
+		return punoImeProfesora;
 	}
 
-	public void setImeProfesora(String imeProfesora) {
-		this.imeProfesora = imeProfesora;
+	public void setPunoImeProfesora(String punoImeProfesora) {
+		this.punoImeProfesora = punoImeProfesora;
 	}
-
-	public String getPrezimeProfesora() {
-		return prezimeProfesora;
-	}
-
-	public void setPrezimeProfesora(String prezimeProfesora) {
-		this.prezimeProfesora = prezimeProfesora;
-	}
-
 	public int getOcena() {
 		return ocena;
 	}
@@ -88,8 +66,8 @@ public class ZeleniKarton {
 
 	public void stampaj() {
 		System.out.println(this.predmet + " - " + this.ocena);
-		System.out.println("Student: " + this.imeStudenta + " " + this.prezimeStudenta + ", " + this.brojIndeksa);
-		System.out.println("Profesor: " + this.imeProfesora + " " + this.prezimeProfesora);
+		System.out.println("Student: " + this.punoImeStudenta + ", " + this.brojIndeksa);
+		System.out.println("Profesor: " + this.punoImeProfesora);
 	}
 
 }
