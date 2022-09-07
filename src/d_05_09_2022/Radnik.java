@@ -23,13 +23,7 @@ public abstract class Radnik {
 		public void setImeRadnika(String imeRadnika) {
 			this.imeRadnika = imeRadnika;
 		}
-		public ArrayList<Sektor> getSektori() {
-			return sektori;
-		}
-		
-		public void setSektori(ArrayList<Sektor> sektori) {
-			this.sektori = sektori;
-		}
+	
 		public abstract void plata();
 		
 		public void zaposliUSektor(Sektor sektor) {
