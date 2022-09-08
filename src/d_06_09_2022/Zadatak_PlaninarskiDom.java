@@ -14,6 +14,7 @@ public class Zadatak_PlaninarskiDom {
 		Planinar p4 = new Alpinista("67", "Uros Peric", 4);
 		Planinar p5 = new Alpinista("765", "Ivana Ilic",7);
 		Planinar p6 = new Alpinista("725", "Igor Maric", 9);
+		System.out.println("Clanarina alpiniste sa popustom: " + p6.clanarina());
 		dom.uclaniPlaninara(p6);
 		dom.uclaniPlaninara(p5);
 		dom.uclaniPlaninara(p4);

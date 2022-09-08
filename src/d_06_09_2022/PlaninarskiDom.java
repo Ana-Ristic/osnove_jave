@@ -86,7 +86,7 @@ public class PlaninarskiDom {
 		for (int i = 0; i < this.clanovi.size(); i++) {
 			suma = suma + this.clanovi.get(i).clanarina();
 		}
-		return suma * 30;
+		return suma;
 	}
 
 }
